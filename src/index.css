@@ -1,11 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 * {
-    font-family: "Roboto", "Arial", serif;
+    font-family: "Roboto",  system-ui;
 }
-header {
-    li:not(:last-child) {
-        margin-right: 20px;
+
+body {
+    /*background: url("bgc.svg");*/
+    overflow-x: hidden;
+}
+
+.hero {
+    background: url("hero-bgc.svg") no-repeat top ;
+    background-size: 100% auto;
+    margin-bottom:200px;
+    header {
+        li:not(:last-child) {
+            margin-right: 56px;
+        }
+    }
+   .timer {
+       div:not(:last-child){
+           margin-right: 30px;
+       }
+   }
+    .progress {
+        width: 714px;
+        height: 6px;
+        border-radius: 30px;
+        background-color: rgb(232, 232, 232);
+
+        .progress__inner {
+            height: 100%;
+            width: 80%;
+            transition: all 0.3s ease-in-out;
+            background: linear-gradient(141deg, #df5950 0%, #451046 100%);        }
     }
 }
