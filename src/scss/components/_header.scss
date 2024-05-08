@@ -1,0 +1,36 @@
+.header {
+  padding-top:35px;
+  &--position {
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 10;
+    width: 100%;
+  }
+  &__container {
+    @include flex-all-sb;
+  }
+  .logo {
+    padding-left:80px;
+  }
+  .nav {
+    &__list{
+      display: flex;
+    }
+    &__item {
+      &:not(:first-child) {
+        margin-left: 60px;
+      }
+    }
+    &__link {
+      @include header-font;
+    }
+  }
+  &__button {
+    border-radius: 50px;
+    border: none;
+    padding: 10px 30px;
+    background: linear-gradient(142deg, #c89afc 0%, #7c6afa 100%);
+    @include header-font;
+  }
+}

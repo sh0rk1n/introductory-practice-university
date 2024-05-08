@@ -1,0 +1,110 @@
+.hero {
+  padding-top: 270px;
+  min-height: 960px;
+  background: url("../img/svg/hero-bg.svg") center no-repeat;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 140%;
+    color: var(--light-color);
+  }
+
+  &__timer {
+    display: flex;
+    &-item {
+      margin: 0;
+      padding: 20px 30px;
+      background: #121212;
+      display: flex;
+      flex-direction: column;
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 140%;
+      text-align: center;
+      color: var(--light-color);
+
+      &:not(:first-child) {
+        margin-left: 30px;
+      }
+
+      span {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        opacity: 0.4;
+      }
+    }
+  }
+
+  &__container-course {
+    margin: 200px auto 0 auto;
+    max-width: 1920px;
+    background: #121212;
+  }
+  &__course {
+    display: flex;
+    align-items: center;
+    button {
+      margin-right:81px;
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+      color: var(--light-color);
+      border-radius: 50px;
+      border: none;
+      padding: 10px 30px;
+      //  height: 44px;
+      background: linear-gradient(141deg, #df5950 0%, #451046 100%);
+    }
+
+    &-item {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: rgba(255, 255, 255, 0.4);
+      span {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+         color: var(--light-color);
+      }
+      .hero__course-item-span:first-child {
+        margin-left: 50px;
+      }
+    }
+  }
+
+  &__money {
+    margin-left:40px;
+    position: relative;
+    &-line {
+      width: 720px;
+      height: 6px;
+    }
+    &-line-achieved {
+      position: absolute;
+      width: 440px;
+      top:45px;
+      z-index: 8;
+    }
+    &-line-total {
+      position: absolute;
+      top:45px;
+      z-index: 5;
+    }
+    &-total {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

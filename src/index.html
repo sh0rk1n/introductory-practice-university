@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+      @include('partials/header.html')
+
+      <main class="main">
+        @include('partials/hero.html')
+        @include('partials/about.html')
+        @include('partials/start.html')
+        @include('partials/advantages.html')
+        @include('partials/partners.html')
+        @include('partials/program.html')
+        @include('partials/teachers.html')
+      </main>
+
+    @include('partials/footer.html')
+  </div>
+</body>
+</html>
+
+<!-- TODO: 1. Исправить задний фон
+           2. исправить 200/190 учеников в hero
+           3. Исправить в быстром старте 100%/75% расположение
+           4. Исправить в партнерах линии (сделать сетку/бордер)
+           5. В программе обучения descr поправить
+           6. Сделать плавный скролл.
+           7. Сделать чтобы элементы вылетали (анимация)
+           8. Добавить курсоры при наведении на компонент.
+           9. Убрать возможность копирования компонентов (фотографии)
+           10. Сделать чтобы прилетало уведомления при нажатии на кнопку
+           11. Сделать рабочими nav объекты (при нажатии перекидывает на секцию которая на странице)
+           12. Сделать рабочим время на hero
+           13. Хочу чтобы вылетали элементы из программы обучения
+           После фиксов сделать адаптив-верстку.
+           -->
