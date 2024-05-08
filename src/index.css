@@ -7,7 +7,7 @@
 }
 
 body {
-    /*background: url("bgc.svg");*/
+    background: url("bgc.svg");
     overflow-x: hidden;
 }
 
@@ -36,5 +36,11 @@ body {
             width: 80%;
             transition: all 0.3s ease-in-out;
             background: linear-gradient(141deg, #df5950 0%, #451046 100%);        }
+    }
+}
+
+.start {
+    span:not(:last-child){
+        margin-right:240px;
     }
 }
