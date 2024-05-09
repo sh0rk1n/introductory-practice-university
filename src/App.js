@@ -1,5 +1,4 @@
  // ToDoo: 1. Сделать адаптив
- //         2. Подправить кнопку в header
  //         3. Подправить косяк в teachers
  //         4. Прописать атрибут в img, чтобы нельзя было копировать изображение
  //         5. Сделать везде cursor: pointer
@@ -10,12 +9,12 @@
 
 function App() {
   return (
-    <div className="wrapper max-2xl my-0 mx-auto text-base text-white ">
+    <div className="wrapper my-0 mx-auto text-base text-white ">
       <div className="hero">
-        <header className="flex items-center justify-between  max-w-1760 pt-7 pb-48 px-20">
+        <header className="flex items-center justify-between pt-7 pb-36 px-20">
           <img width={40} height={40} src="/img/logo.svg" alt="Logo"/>
           <nav>
-            <ul className="flex">
+            <ul className="flex ml-52 ">
               <li>Главная</li>
               <li>Курсы</li>
               <li>Расписание</li>
@@ -24,10 +23,10 @@ function App() {
               <li>Контакты</li>
             </ul>
           </nav>
-          <button className="ml-20 px-7 py-2.5 bg-gradient-to-br from-purple-400 to-indigo-600 rounded-full	">Зайти в кабинет</button>
+          <button className=" px-5 py-2.5 bg-gradient-to-br from-purple-400 to-indigo-600 rounded-full	">Зайти в кабинет</button>
         </header>
-        <div className="px-20">
-          <h1 className="text-6xl	font-bold">Первый курс <br/> по компьютерной сборке</h1>
+        <div className="px-20 ml-32">
+          <h1 className="text-6xl	font-bold max-w-2xl leading-[5rem] ">Первый курс по компьютерной сборке</h1>
           <div className='timer flex items-center text-center mt-12'>
             <div className="py-5 px-8 bg-[#121212]">
               <h5 className="text-4xl font-bold">18</h5>
@@ -47,11 +46,10 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="">
-          <div className="hero-bottom flex bg-[#121212] max-w-full h-32 mt-32  content-center items-center px-20">
-            <button className="bg-gradient-to-br from-red-500 to-purple-900 py-2.5 px-8 rounded-full mr-20">Заказать курс</button>
+          <div className="hero-bottom flex bg-[#121212] max-w-full h-32 mt-36  content-center items-center ">
+            <button className="ml-52 bg-gradient-to-br from-red-500 to-purple-900 py-2.5 px-8 rounded-full mr-20">Заказать курс</button>
             <div className="mr-20">
-              <p className="text-neutral-500">
+              <p className="text-neutral-500 mb-2">
                 Учеников всего:
                 <span className="text-white ml-28">200</span>
               </p>
@@ -62,14 +60,14 @@ function App() {
             </div>
 
             <div className="flex text-neutral-500 flex-col ">
-              <p>
+              <p className="mb-1">
                 Заработано учениками:
                 <span className="text-white ml-10">
               400 000&#8381;
               </span>
               </p>
-              <div className="progress">
-                <div style={{width: '50%'}} className="progress__inner"></div>
+              <div className="progress mb-1">
+                <div style={{width: '70%'}} className="progress__inner"></div>
               </div>
 
               <div className="flex justify-between">
@@ -79,18 +77,17 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
       </div>
 
-      <div className="about flex items-center px-20 mb-48 ">
+      <div className="about flex items-center px-20  ml-32 mb-48 ">
         <img src="/img/pc-block.svg" alt=""/>
-        <div className=" ml-36 content-center">
+        <div className=" ml-36 mb-36 content-center ">
           <h2 className="text-5xl font-bold mb-11">Чем мы занимаемся?</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci fermentum vestibulum, morbi. Et neque, adipiscing sapien sem senectus praesent aenean consequat. Aenean facilisi turpis aliquet fringilla. Nunc sem felis sed interdum feugiat mattis elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet. <br/> Nullam turpis arcu malesuada arcu interdum placerat nisi, lobortis. </p>
+          <p className="max-w-screen-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci fermentum vestibulum, morbi. Et neque, adipiscing sapien sem senectus praesent aenean consequat. Aenean facilisi turpis aliquet fringilla. Nunc sem felis sed interdum feugiat mattis elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placerat nisi, lobortis. </p>
         </div>
       </div>
 
-      <div className="start px-20 mb-48">
+      <div className="start px-20 ml-32 mb-48">
         <div className="flex items-center text-center">
           <img width={70} height={45} src="/img/logo/start.svg" alt=""/>
           <h2 className="text-5xl font-bold ml-12 ">Быстрый старт</h2>
@@ -125,33 +122,36 @@ function App() {
         </div>
       </div>
 
-      <div className="advantages  px-20 mb-48 ">
+      <div className="advantages flex flex-col items-center px-20 mb-48 mr-14 ">
         <h2 className="text-5xl font-bold mb-28 text-center">Получите профессию прямо сейчас</h2>
-        <div className="flex text-center items-center">
+        <div className="flex text-center items-center ml-14">
           <div className="flex flex-col items-center mr-20">
             <img width={100} height={100} className="mb-11" src="/img/icons/pc.svg" alt=""/>
             <h3 className="text-2xl font-medium mb-7">Только практические <br/> навыки в работе</h3>
-            <p className="text-neutral-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit
-              quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus.</p>
+            <p className="text-neutral-500 max-w-[358px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus
+              eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat
+              dui.</p>
+
           </div>
 
           <div className="flex flex-col items-center mr-20">
             <img width={100} height={100} className="mb-11" src="/img/icons/flash.svg" alt=""/>
             <h3 className="text-2xl font-medium mb-7">Работа на самом <br/>современном оборудовании</h3>
-            <p className="text-neutral-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit
-              quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus.</p>
+            <p className="text-neutral-500 max-w-[358px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus
+              eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat
+              dui.</p>
+
           </div>
 
           <div className="flex flex-col items-center">
             <img width={100} height={100} className="mb-11" src="/img/icons/usb.svg" alt=""/>
             <h3 className="text-2xl font-medium mb-7">Сертификация <br/> по окончании обучения</h3>
-            <p className="text-neutral-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit
-              quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus.</p>
+            <p className="text-neutral-500 max-w-[358px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
           </div>
         </div>
       </div>
 
-      <div className="partners px-20 mb-48">
+      <div className="partners px-20 ml-32 mb-48">
 
         <div className="flex items-center text-center">
           <img width={70} height={45} src="/img/logo/partners.svg" alt=""/>
@@ -229,7 +229,7 @@ function App() {
         </div>
       </div>
 
-      <div className="teachers px-20 mb-48">
+      <div className="teachers px-20 ml-32 mb-48">
         <div className="flex items-center">
           <img src="/img/logo/teachers.svg" alt=""/>
           <h2 className="text-5xl font-bold ml-12 ">Ваши преподаватели</h2>

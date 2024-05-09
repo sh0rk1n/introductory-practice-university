@@ -4,25 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c0f9fdd-a0ff-4dd2-8018-d3c844108490" name="Changes" comment="hero layout throw on">
-      <change afterPath="$PROJECT_DIR$/public/img/icons/vk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/icons/youtube.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo/partners.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo/program.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo/teachers.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/msi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/teachers/teacher-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/teachers/teacher-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/teachers/teacher-3.png" afterDir="false" />
+    <list default="true" id="2c0f9fdd-a0ff-4dd2-8018-d3c844108490" name="Changes" comment="Layout ready, remains is to fix/optimize the code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/icon-1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/icons/pc.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/icon-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/icons/flash.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/icon-3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/icons/usb.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/logo-start.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/logo/start.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/pc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/pc-block.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,31 +46,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;react&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/danil/Desktop/pet-project-pc/client&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "react",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/danil/Desktop/pet-project-pc/client/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\danil\Desktop\pet-project-pc\client\public" />
       <recent name="C:\Users\danil\Desktop\pet-project-pc\client" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\danil\Desktop\pet-project-pc\client\public" />
       <recent name="C:\Users\danil\Desktop\pet-project-pc\client\public\img\icons" />
       <recent name="C:\Users\danil\Desktop\pet-project-pc\client\public\img" />
       <recent name="C:\Users\danil\Desktop\pet-project-pc\client\public\img\logo" />
       <recent name="C:\Users\danil\Desktop\pet-project-pc\client\public\img\teachers" />
-      <recent name="C:\Users\danil\Desktop\pet-project-pc\client\public\logo-start" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -97,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715181207466</updated>
       <workItem from="1715181209405" duration="327000" />
-      <workItem from="1715248086911" duration="11334000" />
+      <workItem from="1715248086911" duration="21560000" />
     </task>
     <task id="LOCAL-00001" summary="hero layout throw on">
       <option name="closed" value="true" />
@@ -107,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715199218641</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Layout ready, remains is to fix/optimize the code">
+      <option name="closed" value="true" />
+      <created>1715262408186</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715262408186</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +109,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hero layout throw on" />
-    <option name="LAST_COMMIT_MESSAGE" value="hero layout throw on" />
+    <MESSAGE value="Layout ready, remains is to fix/optimize the code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Layout ready, remains is to fix/optimize the code" />
   </component>
 </project>
