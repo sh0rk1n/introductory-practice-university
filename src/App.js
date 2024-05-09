@@ -7,87 +7,69 @@
  //         8. Сделать плавный скролл
  //         9. Сделать, что когда нажимаешь на кнопку, то вылазило уведомление
 
-function App() {
+ import Header from "./components/header";
+ import CountTimer from "./components/count-time";
+
+ function App() {
   return (
     <div className="wrapper my-0 mx-auto text-base text-white ">
-      <div className="hero">
-        <header className="flex items-center justify-between pt-7 pb-48 px-20">
-          <img width={40} height={40} src="/img/logo.svg" alt="Logo"/>
-          <nav>
-            <ul className="flex ml-52 ">
-              <li>Главная</li>
-              <li>Курсы</li>
-              <li>Расписание</li>
-              <li>Преподаватели</li>
-              <li>Рассылка</li>
-              <li>Контакты</li>
-            </ul>
-          </nav>
-          <button className=" px-5 py-2.5 bg-gradient-to-br from-purple-400 to-indigo-600 rounded-full	">Зайти в кабинет</button>
-        </header>
+      <div className="hero mb-48">
+        <Header/>
+
         <div className="px-20 ml-64">
           <h1 className="text-6xl	font-bold  leading-[6rem] ">Первый курс <br/> по компьютерной сборке</h1>
           <div className='timer flex items-center text-center mt-12'>
-            <div className="py-5 px-8 bg-[#121212]">
-              <h5 className="text-4xl font-bold">18</h5>
-              <p className="text-neutral-500">Дней</p>
+            <CountTimer/>
+          </div>
+        </div>
+        <div className="hero-bottom flex bg-[#121212] max-w-full h-32 mt-60  content-center items-center ">
+          <button
+            className="ml-[22rem] bg-gradient-to-br from-red-500 to-purple-900 py-2.5 px-8 rounded-full mr-20">Заказать
+            курс
+          </button>
+          <div className="mr-20">
+            <p className="text-neutral-500 mb-2">
+              Учеников всего:
+              <span className="text-white ml-28">200</span>
+            </p>
+            <p className="text-neutral-500">
+              Успешно закончили курс:
+              <span className="text-white ml-10">190</span>
+            </p>
+          </div>
+
+          <div className="flex text-neutral-500 flex-col ">
+            <p className="mb-1">
+              Заработано учениками:
+              <span className="text-white ml-10">
+              400 000&#8381;
+              </span>
+            </p>
+            <div className="progress mb-1">
+              <div style={{width: '70%'}} className="progress__inner"></div>
             </div>
-            <div className="py-5 px-8 bg-[#121212]" >
-              <h5 className="text-4xl font-bold">18</h5>
-              <p className="text-neutral-500">Часов</p>
-            </div>
-            <div  className="py-5 px-8 bg-[#121212]">
-              <h5 className="text-4xl font-bold">18</h5>
-              <p className="text-neutral-500">Минут</p>
-            </div>
-            <div  className="py-5 px-8 bg-[#121212] ">
-              <h5 className="text-4xl font-bold">18</h5>
-              <p className="text-neutral-500">Секунд</p>
+
+            <div className="flex justify-between">
+              <p>0</p>
+              <p>1 000 000&#8381;</p>
             </div>
           </div>
         </div>
-          <div className="hero-bottom flex bg-[#121212] max-w-full h-32 mt-60  content-center items-center ">
-            <button className="ml-[22rem] bg-gradient-to-br from-red-500 to-purple-900 py-2.5 px-8 rounded-full mr-20">Заказать курс</button>
-            <div className="mr-20">
-              <p className="text-neutral-500 mb-2">
-                Учеников всего:
-                <span className="text-white ml-28">200</span>
-              </p>
-              <p className="text-neutral-500">
-                Успешно закончили курс:
-                <span className="text-white ml-10">190</span>
-              </p>
-            </div>
-
-            <div className="flex text-neutral-500 flex-col ">
-              <p className="mb-1">
-                Заработано учениками:
-                <span className="text-white ml-10">
-              400 000&#8381;
-              </span>
-              </p>
-              <div className="progress mb-1">
-                <div style={{width: '70%'}} className="progress__inner"></div>
-              </div>
-
-              <div className="flex justify-between">
-
-                <p>0</p>
-                <p>1 000 000&#8381;</p>
-              </div>
-            </div>
-          </div>
       </div>
 
       <div className="about flex items-center px-20  ml-64 mb-48 ">
         <img src="/img/pc-block.svg" alt=""/>
         <div className=" ml-36 mb-36 content-center ">
           <h2 className="text-5xl font-bold mb-11">Чем мы занимаемся?</h2>
-          <p className="max-w-screen-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci fermentum vestibulum, morbi. Et neque, adipiscing sapien sem senectus praesent aenean consequat. Aenean facilisi turpis aliquet fringilla. Nunc sem felis sed interdum feugiat mattis elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placerat nisi, lobortis. </p>
+          <p className="max-w-screen-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim
+            et feugiat elit augue in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci fermentum vestibulum,
+            morbi. Et neque, adipiscing sapien sem senectus praesent aenean consequat. Aenean facilisi turpis aliquet
+            fringilla. Nunc sem felis sed interdum feugiat mattis elit, sollicitudin. Quam pharetra rhoncus risus,
+            cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placerat nisi, lobortis. </p>
         </div>
       </div>
 
-      <div className="start px-20 ml-64 mb-48" >
+      <div className="start px-20 ml-64 mb-48">
         <div className="flex items-center text-center">
           <img width={70} height={45} src="/img/logo/start.svg" alt=""/>
           <h2 className="text-5xl font-bold ml-12 ">Быстрый старт</h2>
