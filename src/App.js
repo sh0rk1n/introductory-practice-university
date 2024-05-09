@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="wrapper my-0 mx-auto text-base text-white ">
       <div className="hero">
-        <header className="flex items-center justify-between pt-7 pb-36 px-20">
+        <header className="flex items-center justify-between pt-7 pb-48 px-20">
           <img width={40} height={40} src="/img/logo.svg" alt="Logo"/>
           <nav>
             <ul className="flex ml-52 ">
@@ -25,8 +25,8 @@ function App() {
           </nav>
           <button className=" px-5 py-2.5 bg-gradient-to-br from-purple-400 to-indigo-600 rounded-full	">Зайти в кабинет</button>
         </header>
-        <div className="px-20 ml-32">
-          <h1 className="text-6xl	font-bold max-w-2xl leading-[5rem] ">Первый курс по компьютерной сборке</h1>
+        <div className="px-20 ml-64">
+          <h1 className="text-6xl	font-bold  leading-[6rem] ">Первый курс <br/> по компьютерной сборке</h1>
           <div className='timer flex items-center text-center mt-12'>
             <div className="py-5 px-8 bg-[#121212]">
               <h5 className="text-4xl font-bold">18</h5>
@@ -46,8 +46,8 @@ function App() {
             </div>
           </div>
         </div>
-          <div className="hero-bottom flex bg-[#121212] max-w-full h-32 mt-36  content-center items-center ">
-            <button className="ml-52 bg-gradient-to-br from-red-500 to-purple-900 py-2.5 px-8 rounded-full mr-20">Заказать курс</button>
+          <div className="hero-bottom flex bg-[#121212] max-w-full h-32 mt-60  content-center items-center ">
+            <button className="ml-[22rem] bg-gradient-to-br from-red-500 to-purple-900 py-2.5 px-8 rounded-full mr-20">Заказать курс</button>
             <div className="mr-20">
               <p className="text-neutral-500 mb-2">
                 Учеников всего:
@@ -79,7 +79,7 @@ function App() {
           </div>
       </div>
 
-      <div className="about flex items-center px-20  ml-32 mb-48 ">
+      <div className="about flex items-center px-20  ml-64 mb-48 ">
         <img src="/img/pc-block.svg" alt=""/>
         <div className=" ml-36 mb-36 content-center ">
           <h2 className="text-5xl font-bold mb-11">Чем мы занимаемся?</h2>
@@ -87,7 +87,7 @@ function App() {
         </div>
       </div>
 
-      <div className="start px-20 ml-32 mb-48">
+      <div className="start px-20 ml-64 mb-48" >
         <div className="flex items-center text-center">
           <img width={70} height={45} src="/img/logo/start.svg" alt=""/>
           <h2 className="text-5xl font-bold ml-12 ">Быстрый старт</h2>
@@ -122,9 +122,9 @@ function App() {
         </div>
       </div>
 
-      <div className="advantages flex flex-col items-center px-20 mb-48 mr-14 ">
+      <div className="advantages flex flex-col items-center px-20 ml-20 mb-48 ">
         <h2 className="text-5xl font-bold mb-28 text-center">Получите профессию прямо сейчас</h2>
-        <div className="flex text-center items-center ml-14">
+        <div className="flex text-center items-center ">
           <div className="flex flex-col items-center mr-20">
             <img width={100} height={100} className="mb-11" src="/img/icons/pc.svg" alt=""/>
             <h3 className="text-2xl font-medium mb-7">Только практические <br/> навыки в работе</h3>
@@ -151,14 +151,14 @@ function App() {
         </div>
       </div>
 
-      <div className="partners px-20 ml-32 mb-48">
+      <div className="partners px-20 ml-64 mb-48">
 
         <div className="flex items-center text-center">
           <img width={70} height={45} src="/img/logo/partners.svg" alt=""/>
           <h2 className="text-5xl font-bold ml-12 ">Партнеры - топовые бренды</h2>
         </div>
 
-        <div className="flex flex-col items-center mt-20 ">
+        <div className="flex flex-col items-center mt-20 mr-48 ">
           <div className="col-logo flex border-b border-neutral-700  ">
             <img className="" src="/img/msi.svg" alt="Logo-1"/>
             <img className="" src="/img/msi.svg" alt="Logo-2"/>
@@ -176,7 +176,7 @@ function App() {
 
       </div>
 
-      <div className="program px-20 mb-48  ">
+      <div className="program px-20 ml-20 mb-48 ">
         <div className="flex flex-col items-center text-center">
           <img className="mb-8" width={70} height={45} src="/img/logo/program.svg" alt=""/>
           <h2 className="text-5xl font-bold">Программа обучения</h2>
@@ -229,25 +229,25 @@ function App() {
         </div>
       </div>
 
-      <div className="teachers px-20 ml-32 mb-48">
+      <div className="teachers px-20 ml-64 mb-48">
         <div className="flex items-center">
           <img src="/img/logo/teachers.svg" alt=""/>
           <h2 className="text-5xl font-bold ml-12 ">Ваши преподаватели</h2>
         </div>
         <div className="flex justify-between mt-28 ml-20 max-w-screen-xl">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center ml-8">
             <img className="rounded-[100%] h-48	w-48 mb-8" src="/img/teachers/teacher-1.jpg" alt=""/>
             <h4 className="text-2xl font-medium mb-3 ">Михаил Белкин</h4>
             <p className="text-neutral-500 mb-5">Специалист по видеокартам</p>
             <button className="border rounded-full py-2.5 px-7 ">Биография</button>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center ml-8">
             <img className="rounded-[100%] h-48	w-48 mb-8" src="/img/teachers/teacher-2.jpg" alt=""/>
             <h4 className="text-2xl font-medium mb-3 ">Константин Иванов</h4>
             <p className="text-neutral-500 mb-5">Специалист по процессорам</p>
             <button className="border rounded-full py-2.5 px-7 ">Биография</button>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center mr-32">
             <img className="rounded-[100%] h-48	w-48 mb-8" src="/img/teachers/teacher-3.png" alt=""/>
             <h4 className="text-2xl font-medium mb-3 ">Иван Нитроксенус</h4>
             <p className="text-neutral-500 mb-5">Специалист по блокам питания</p>
@@ -256,7 +256,7 @@ function App() {
         </div>
       </div>
 
-      <footer className="flex flex-col items-center text-center">
+      <footer className="flex flex-col items-center text-center ml-32">
         <h2 className="text-5xl font-bold ">Статьи каждую неделю</h2>
         <p className=" text-neutral-500 mt-8 mb-16 ">Больше 90% учеников прошли полный курс и смогли <br/> собрать свой
           первый компьютер</p>
