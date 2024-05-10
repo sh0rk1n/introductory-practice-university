@@ -1,10 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 * {
     font-family: "Roboto",  system-ui;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     background: url("bgc.svg");
     overflow-x: hidden;
