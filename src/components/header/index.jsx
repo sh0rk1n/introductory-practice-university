@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header className="flex items-center justify-between pt-7 pb-48 px-20">
-      <img width={40} height={40} src="/img/logo.svg" alt="Logo"/>
+      <img width={40} height={40} src="/img/logo.svg" draggable="false" alt="Logo"/>
       <nav>
         <ul className="flex ml-52 ">
           <li>Главная</li>

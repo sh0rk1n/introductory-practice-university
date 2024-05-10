@@ -58,7 +58,7 @@
       </div>
 
       <div className="about flex items-center px-20  ml-64 mb-48 ">
-        <img src="/img/pc-block.svg" alt=""/>
+        <img src="/img/pc-block.svg" draggable="false" alt="PC Block"/>
         <div className=" ml-36 mb-36 content-center ">
           <h2 className="text-5xl font-bold mb-11">Чем мы занимаемся?</h2>
           <p className="max-w-screen-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim
@@ -71,7 +71,7 @@
 
       <div className="start px-20 ml-64 mb-48">
         <div className="flex items-center text-center">
-          <img width={70} height={45} src="/img/logo/start.svg" alt=""/>
+          <img width={70} height={45} src="/img/logo/start.svg" draggable="false" alt="FastStart Logo"/>
           <h2 className="text-5xl font-bold ml-12 ">Быстрый старт</h2>
         </div>
         <p className="max-w-md text-neutral-500 mt-10 ml-1 mb-20 ">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
@@ -108,25 +108,23 @@
         <h2 className="text-5xl font-bold mb-28 text-center">Получите профессию прямо сейчас</h2>
         <div className="flex text-center items-center ">
           <div className="flex flex-col items-center mr-20">
-            <img width={100} height={100} className="mb-11" src="/img/icons/pc.svg" alt=""/>
+            <img width={100} height={100} className="mb-11" src="/img/icons/pc.svg" draggable="false" alt="Icon-Pc"/>
             <h3 className="text-2xl font-medium mb-7">Только практические <br/> навыки в работе</h3>
             <p className="text-neutral-500 max-w-[358px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus
               eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat
               dui.</p>
-
           </div>
 
           <div className="flex flex-col items-center mr-20">
-            <img width={100} height={100} className="mb-11" src="/img/icons/flash.svg" alt=""/>
+            <img width={100} height={100} className="mb-11" src="/img/icons/flash.svg" draggable="false" alt="Icon-Flash"/>
             <h3 className="text-2xl font-medium mb-7">Работа на самом <br/>современном оборудовании</h3>
             <p className="text-neutral-500 max-w-[358px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus
               eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat
               dui.</p>
-
           </div>
 
           <div className="flex flex-col items-center">
-            <img width={100} height={100} className="mb-11" src="/img/icons/usb.svg" alt=""/>
+            <img width={100} height={100} className="mb-11" src="/img/icons/usb.svg" draggable="false" alt="Icon-USB"/>
             <h3 className="text-2xl font-medium mb-7">Сертификация <br/> по окончании обучения</h3>
             <p className="text-neutral-500 max-w-[358px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
           </div>
@@ -134,37 +132,33 @@
       </div>
 
       <div className="partners px-20 ml-64 mb-48">
-
         <div className="flex items-center text-center">
-          <img width={70} height={45} src="/img/logo/partners.svg" alt=""/>
+          <img width={70} height={45} src="/img/logo/partners.svg" draggable="false" alt="Partners Logo"/>
           <h2 className="text-5xl font-bold ml-12 ">Партнеры - топовые бренды</h2>
         </div>
-
         <div className="flex flex-col items-center mt-20 mr-48 ">
           <div className="col-logo flex border-b border-neutral-700  ">
-            <img className="" src="/img/msi.svg" alt="Logo-1"/>
-            <img className="" src="/img/msi.svg" alt="Logo-2"/>
-            <img className="" src="/img/msi.svg" alt="Logo-3"/>
-            <img className="" src="/img/msi.svg" alt="Logo-4"/>
+            <img className="" src="/img/msi.svg" draggable="false" alt="Logo MSI"/>
+            <img className="" src="/img/msi.svg" draggable="false" alt="Logo MSI"/>
+            <img className="" src="/img/msi.svg" draggable="false" alt="Logo MSI"/>
+            <img className="" src="/img/msi.svg" draggable="false" alt="Logo MSI"/>
           </div>
           <div className="col-logo flex ">
-            <img className="pt-7" src="/img/msi.svg" alt="Logo-5"/>
-            <img className="pt-7" src="/img/msi.svg" alt="Logo-6"/>
-            <img className="pt-7" src="/img/msi.svg" alt="Logo-7"/>
-            <img className="pt-7" src="/img/msi.svg" alt="Logo-8"/>
+            <img className="pt-7" src="/img/msi.svg" draggable="false" alt="Logo MSI"/>
+            <img className="pt-7" src="/img/msi.svg" draggable="false" alt="Logo MSI"/>
+            <img className="pt-7" src="/img/msi.svg" draggable="false" alt="Logo MSI"/>
+            <img className="pt-7" src="/img/msi.svg" draggable="false" alt="Logo MSI"/>
           </div>
-
         </div>
-
       </div>
 
       <div className="program px-20 ml-20 mb-48 ">
         <div className="flex flex-col items-center text-center">
-          <img className="mb-8" width={70} height={45} src="/img/logo/program.svg" alt=""/>
+          <img className="mb-8" width={70} height={45} src="/img/logo/program.svg" draggable="false" alt="Program Logo"/>
           <h2 className="text-5xl font-bold">Программа обучения</h2>
           <p className=" text-neutral-500 mt-8 mb-20 ">Больше 90% учеников прошли полный курс и смогли <br/> собрать свой первый компьютер</p>
         </div>
-
+        {/*Translate to component*/}
         <div className="my-1 mx-auto max-w-xl">
           <div className="week">
             <div>
@@ -213,24 +207,25 @@
 
       <div className="teachers px-20 ml-64 mb-48">
         <div className="flex items-center">
-          <img src="/img/logo/teachers.svg" alt=""/>
+          <img src="/img/logo/teachers.svg" draggable="false" alt="Teachers Logo"/>
           <h2 className="text-5xl font-bold ml-12 ">Ваши преподаватели</h2>
         </div>
         <div className="flex justify-between mt-28 ml-20 max-w-screen-xl">
           <div className="flex flex-col items-center ml-8">
-            <img className="rounded-[100%] h-48	w-48 mb-8" src="/img/teachers/teacher-1.jpg" alt=""/>
+            {/*Translate to compontent*/}
+            <img className="rounded-[100%] h-48	w-48 mb-8" src="/img/teachers/teacher-1.jpg" draggable="false"  alt="Teacher-1"/>
             <h4 className="text-2xl font-medium mb-3 ">Михаил Белкин</h4>
             <p className="text-neutral-500 mb-5">Специалист по видеокартам</p>
             <button className="border rounded-full py-2.5 px-7 ">Биография</button>
           </div>
           <div className="flex flex-col items-center ml-8">
-            <img className="rounded-[100%] h-48	w-48 mb-8" src="/img/teachers/teacher-2.jpg" alt=""/>
+            <img className="rounded-[100%] h-48	w-48 mb-8" src="/img/teachers/teacher-2.jpg" draggable="false"  alt="Teacher-2"/>
             <h4 className="text-2xl font-medium mb-3 ">Константин Иванов</h4>
             <p className="text-neutral-500 mb-5">Специалист по процессорам</p>
             <button className="border rounded-full py-2.5 px-7 ">Биография</button>
           </div>
           <div className="flex flex-col items-center mr-32">
-            <img className="rounded-[100%] h-48	w-48 mb-8" src="/img/teachers/teacher-3.png" alt=""/>
+            <img className="rounded-[100%] h-48	w-48 mb-8" src="/img/teachers/teacher-3.png" draggable="false"  alt="Teacher-3"/>
             <h4 className="text-2xl font-medium mb-3 ">Иван Нитроксенус</h4>
             <p className="text-neutral-500 mb-5">Специалист по блокам питания</p>
             <button className="border rounded-full py-2.5 px-7 ">Биография</button>
@@ -247,8 +242,8 @@
           <button className="bg-gradient-to-br from-red-500 to-purple-900  left-80 absolute rounded-full py-2.5 px-8 w-40  " >Подписаться</button>
         </div>
         <div className="flex mt-10 mb-11">
-          <img className="w-12 h-12 bg-gradient-to-br from-purple-300 to-indigo-600 p-3.5 rounded-[100%]" src="/img/icons/vk.svg" alt=""/>
-          <img className="w-12 h-12 ml-8 bg-gradient-to-br from-purple-300 to-indigo-600 p-3.5 rounded-full" src="/img/icons/youtube.svg" alt=""/>
+          <img className="w-12 h-12 bg-gradient-to-br from-purple-300 to-indigo-600 p-3.5 rounded-[100%]" src="/img/icons/vk.svg" draggable="false" alt="VK Logo"/>
+          <img className="w-12 h-12 ml-8 bg-gradient-to-br from-purple-300 to-indigo-600 p-3.5 rounded-full" src="/img/icons/youtube.svg" draggable="false" alt="Youtube Logo"/>
         </div>
         <p className="text-neutral-500 mb-4">Сайт создал Ткачев Данил</p>
       </footer>
