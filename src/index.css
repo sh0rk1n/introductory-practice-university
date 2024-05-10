@@ -13,23 +13,25 @@ body {
 .wrapper {
     width: 100vw;
     max-width: 1920px;
-    .hero {
-        background: url("hero-bgc.svg") no-repeat top;
-        background-size: 100% auto;
-        header {
-            li:not(:last-child) {
-                margin-right: 56px;
-            }
-
+    background: url("hero-bgc.svg") no-repeat top;
+    background-size: 100% auto;
+    header {
+        li {
+        cursor: pointer;
+    }
+        li:not(:last-child) {
+            margin-right: 56px;
         }
+    }
 
+    .hero {
         .timer {
             div:not(:last-child) {
                 margin-right: 30px;
             }
         }
 
-        .progress {
+        .progress { /* перенести в tailwind */
             width: 714px;
             height: 6px;
             border-radius: 30px;
