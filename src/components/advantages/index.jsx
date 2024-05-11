@@ -1,5 +1,6 @@
 import React from 'react';
 import Item from "./Item";
+import Reveal from "../utils/Reveal";
 
 const itemData = [
   {
@@ -25,7 +26,9 @@ const itemData = [
 export default function Advantages(){
   return (
     <section className="advantages flex flex-col items-center px-20 ml-20 mb-48 ">
-      <h2 className="text-5xl font-bold mb-28 text-center">Получите профессию прямо сейчас</h2>
+      <Reveal>
+        <h2 className="text-5xl font-bold mb-28 text-center">Получите профессию прямо сейчас</h2>
+      </Reveal>
       <div className="flex text-center items-center ">
         {itemData.map((item, index) => (
           <Item

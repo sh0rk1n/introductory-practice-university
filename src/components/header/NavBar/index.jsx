@@ -8,12 +8,15 @@ const menuItems = [ /* можно конечно закинуть на бэк и
   { id: "footer", text: "Контакты" },
 ];
 export default function NavBar() {
+
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+  {console.log("Привет!")}
+
 
   return (
     <nav>

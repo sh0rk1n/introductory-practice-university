@@ -1,8 +1,6 @@
  // ToDoo:
  //
- //         1. Обернуть заголовки и описания под заг в компонент
  //         6. Оптимизировать код: удалить лишние стили / подумать
- //         7. Разделить блоки на компоненты + укоротить через .map() (что повторяется)
  //         8. Сделать плавный скролл
  //         9. Сделать, что когда нажимаешь на кнопку, то вылазило уведомление
  //         10. Всю data перенести в json
@@ -15,8 +13,8 @@
  import Hero from "./components/hero";
  import About from "./components/about";
  import Start from "./components/start";
- import Advantages from "./components/advantages";
  import Program from "./components/program";
+ import Advantages from "./components/advantages";
  import Teachers from "./components/teachers";
  import Partners from "./components/partners";
  import Footer from "./components/footer";
@@ -48,9 +46,8 @@
          <Teachers/>
          <Partners/>
          <Footer/>
-
      </div>
- );
+   );
  }
 
  export default App;
