@@ -7,7 +7,6 @@ export default function NavBar() {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
-  {console.log("Привет!")}
 
   return (
     <nav>
