@@ -1,27 +1,7 @@
 import React from 'react';
 import Item from "./Item";
+import data from "../../data.json"
 import Reveal from "../utils/Reveal";
-
-const itemData = [
-  {
-    iconSrc: "/img/icons/pc.svg",
-    altText: "Icon-Pc",
-    title: "Только практические навыки в работе",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui."
-  },
-  {
-    iconSrc: "/img/icons/flash.svg",
-    altText: "Icon-Flash",
-    title: "Работа на самом современном оборудовании",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui."
-  },
-  {
-    iconSrc: "/img/icons/usb.svg",
-    altText: "Icon-USB",
-    title: "Сертификация по окончании обучения",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui."
-  }
-];
 
 export default function Advantages(){
   return (
@@ -30,7 +10,7 @@ export default function Advantages(){
         <h2 className="text-5xl font-bold mb-28 text-center">Получите профессию прямо сейчас</h2>
       </Reveal>
       <div className="flex text-center items-center ">
-        {itemData.map((item, index) => (
+        {data.advantages.map((item, index) => (
           <Item
             key={index}
             item={item}

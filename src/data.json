@@ -1,0 +1,74 @@
+{
+  "nav" :  [
+    {
+      "id": "/",
+      "text": "Главная"
+    },
+    {
+      "id": "about",
+      "text": "О нас"
+    },
+    {
+      "id": "start",
+      "text": "Курс"
+    },
+    {
+      "id": "teachers",
+      "text": "Преподаватели" },
+    { "id": "partners", "text": "Партнеры"
+    },
+    {
+      "id": "footer", "text": "Контакты"
+    }
+  ],
+
+  "students": [
+      {
+        "text": "Учеников всего:",
+        "value": 200
+      },
+      {
+        "text": "Успешно закончили курс:",
+        "value": 120
+      }
+  ],
+
+  "advantages": [
+    {
+      "iconSrc": "/img/icons/pc.svg",
+      "altText": "Icon-Pc",
+      "title": "Только практические навыки в работе",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui."
+    },
+    {
+      "iconSrc": "/img/icons/flash.svg",
+      "altText": "Icon-Flash",
+      "title": "Работа на самом современном оборудовании",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui."
+    },
+    {
+      "iconSrc": "/img/icons/usb.svg",
+      "altText": "Icon-USB",
+      "title": "Сертификация по окончании обучения",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui."
+    }
+  ],
+
+  "teachers" : [
+    {
+      "imgSrc": "/img/teachers/teacher-1.jpg",
+      "name":" Михаил Белкин",
+      "descr": "Специалист по видеокартам"
+    },
+    {
+      "imgSrc": "/img/teachers/teacher-2.jpg",
+      "name": "Константин Иванов",
+      "descr": "Специалист по процессорам"
+    },
+    {
+      "imgSrc": "/img/teachers/teacher-3.png",
+      "name": "Иван Нитроксенус",
+      "descr": "Специалист по блокам питания"
+    }
+  ]
+}

@@ -5,14 +5,16 @@
 * {
     font-family: "Roboto",  system-ui;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     background: url("bgc.svg");
     overflow-x: hidden;
-  /*  zoom: 90%; */
 }
+
 .wrapper {
     width: 100vw;
     max-width: 1920px;
@@ -21,30 +23,20 @@ body {
     header {
         li {
         cursor: pointer;
-    }
-        li:not(:last-child) {
+        &:hover {
+            color: #878787;
+            transition: 0.4s;
+        }
+        &:not(:last-child) {
             margin-right: 56px;
         }
     }
+}
 
     .hero {
         .timer {
             div:not(:last-child) {
                 margin-right: 30px;
-            }
-        }
-
-        .progress { /* перенести в tailwind */
-            width: 714px;
-            height: 6px;
-            border-radius: 30px;
-            background-color: rgb(232, 232, 232);
-
-            .progress__inner {
-                height: 100%;
-                width: 80%;
-                transition: all 0.3s ease-in-out;
-                background: linear-gradient(141deg, #df5950 0%, #451046 100%);
             }
         }
     }
@@ -56,28 +48,31 @@ body {
     }
 
     .partners {
-        .col-logo:first-of-type {
-            img {
-                padding-bottom: 1.5rem;
+        .col-logo{
+            &:first-of-type {
+                img {
+                    padding-bottom: 1.5rem;
+                }
             }
-        }
 
-        .col-logo {
+        & {
             img {
                 padding: 1.5rem 4rem 0 4rem;
-            }
 
-            img:not(:last-child) {
-                border-right-width: 1px;
-                border-color: rgb(68 64 60);
+                &:not(:last-child) {
+                    border-right-width: 1px;
+                    border-color: rgb(68 64 60);
+                }
             }
         }
     }
+}
 
     .program {
         .week {
             max-width: 35rem;
             position: relative;
+
             p {
                 margin: 0 0 1em 0;
                 opacity: 0.5;

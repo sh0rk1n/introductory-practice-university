@@ -13,7 +13,7 @@ export default function Header(){
    */
   return (
     <header
-      className="flex items-center justify-between pt-7  px-20">
+      className="flex items-center justify-between pt-7 px-20">
       <img width={40} height={40} className="cursor-pointer" src="/img/logo.svg" draggable="false" alt="Logo"/>
       <NavBar/>
       <button className=" px-5 py-2.5 bg-gradient-to-br from-purple-400 to-indigo-600 rounded-full ">Зайти в кабинет</button>

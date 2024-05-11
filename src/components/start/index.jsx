@@ -1,7 +1,6 @@
 import React from 'react';
 import Infographic from "./Infographic";
 import Reveal from "../utils/Reveal";
-
 export default function Start(){
   return (
     <section id = "start" className="start px-20 ml-64 mb-48">
@@ -14,7 +13,7 @@ export default function Start(){
         </Reveal>
       </div>
       <Reveal>
-      <p className="max-w-md text-neutral-500 mt-10 ml-1 mb-20 ">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
+      <p className="max-w-md text-neutral-500 mt-10 mb-20 ml-1">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
       </Reveal>
       <Infographic/>
     </section>

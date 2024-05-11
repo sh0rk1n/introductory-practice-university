@@ -1,13 +1,11 @@
 import React from 'react';
 import CountTimer from "./CountDown";
 import StudentCourse from "./StudentCourse";
-
-
 export default function Hero(){
   return (
     <section id='/' className="hero mb-96">
       <div className="px-20 ml-64">
-        <h1 className="text-6xl	font-bold  leading-[6rem] ">Первый курс <br/> по компьютерной сборке</h1>
+        <h1 className="text-6xl	font-bold leading-[6rem] ">Первый курс <br/> по компьютерной сборке</h1>
         <div className='timer flex items-center text-center mt-12'>
           <CountTimer/>
         </div>
@@ -17,12 +15,12 @@ export default function Hero(){
         </button>
         <StudentCourse/>
 
-        <div className="flex text-neutral-500 flex-col ">
-          <p className="mb-1">Заработано учениками:
+        <div className="flex flex-col text-neutral-500 ">
+          <p className="mb-1">Заработано учениками
             <span className="text-white ml-10">400 000&#8381;</span>
           </p>
-          <div className="progress mb-1">
-            <div style={{width: '40%'}} className="progress__inner"></div>
+          <div className="w-[714px] h-[6px] bg-gray-300 rounded-[30px] mb-1">
+            <div style={{width: '40%'}} className="h-full w-4/5 transition-all duration-300 ease-in-out bg-gradient-to-tr from-red-500 to-purple-900"></div>
           </div>
 
           <div className="flex justify-between">

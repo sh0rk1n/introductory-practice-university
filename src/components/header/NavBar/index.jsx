@@ -1,14 +1,6 @@
 import React from "react";
-const menuItems = [ /* можно конечно закинуть на бэк и с помощью axios/fetch вытащить данные, но мне лень */
-  { id: "/", text: "Главная" },
-  { id: "about", text: "О нас" },
-  { id: "start", text: "Курс" },
-  { id: "teachers", text: "Преподаватели" },
-  { id: "partners", text: "Партнеры" },
-  { id: "footer", text: "Контакты" },
-];
+import data from "../../../data.json"
 export default function NavBar() {
-
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -17,11 +9,10 @@ export default function NavBar() {
   };
   {console.log("Привет!")}
 
-
   return (
     <nav>
       <ul className="flex ml-52 ">
-        {menuItems.map((item)=> (
+        {data.nav.map((item)=> (
           <li
             key = {item.id}
             onClick={() => scrollToSection(item.id)}
