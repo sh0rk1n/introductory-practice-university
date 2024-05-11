@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 export default function Infographic() {
   const percentages = ['100%', '75%', '50%', 'Итог'];
-  const heights = [20,14,8,2.5]
+  const heights = [5,3.5,2,0.625] // rem
   const texts = Array(4).fill('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.');
+
   return (
     <div className="text-4xl font-bold">
       {percentages.map((percent,index) => (
@@ -12,7 +13,8 @@ export default function Infographic() {
         {heights.map((height,index) => (
           <div
             key={index}
-            className={`w-80 h-${height} bg-gradient-to-br from-purple-400 to-indigo-600`}>
+            style={{ height: `${height}rem` }}
+            className={`w-80 bg-gradient-to-br from-purple-400 to-indigo-600`}>
           </div>
         ))}
       </div>

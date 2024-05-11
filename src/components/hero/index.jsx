@@ -5,7 +5,7 @@ import StudentCourse from "./StudentCourse";
 
 export default function Hero(){
   return (
-    <section id='/' className="hero mb-48">
+    <section id='/' className="hero mb-96">
       <div className="px-20 ml-64">
         <h1 className="text-6xl	font-bold  leading-[6rem] ">Первый курс <br/> по компьютерной сборке</h1>
         <div className='timer flex items-center text-center mt-12'>

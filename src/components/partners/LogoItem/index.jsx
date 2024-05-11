@@ -1,9 +1,9 @@
 import React from 'react';
 
 export default function LogoItem() {
-  const renderLogo = (className = "") => (
-    <img className={`pt-7 ${className}`} src="/img/msi.svg" draggable="false" alt="Logo MSI"/>
-  );
+  // const renderLogo = (className = "") => (
+  //   <img className={`pt-7 ${className}`} src="/img/msi.svg" draggable="false" alt="Logo MSI"/>
+  // );
 
   return (
     <div className="flex flex-col items-center mt-20 mr-48 ">

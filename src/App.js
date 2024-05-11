@@ -7,7 +7,8 @@
  //         9. Сделать, что когда нажимаешь на кнопку, то вылазило уведомление
  //         10. Всю data перенести в json
 
- import React from "react";
+ import React, { useState, useEffect }  from "react";
+ import {motion} from "framer-motion";
  import Header from "./components/header";
  import Hero from "./components/hero";
  import About from "./components/about";
@@ -21,8 +22,22 @@
  function App() {
    return (
     <div className="wrapper my-0 mx-auto text-base text-white ">
-      <Header/>
-      <Hero/>
+      <motion.div
+        initial={{opacity: 0, y: -100}}
+        animate={{opacity: 1, y: 0}}
+        exit={{opacity: 0}}
+        transition={{duration: 0.8}}
+      >
+        <Header/>
+      </motion.div>
+
+      <motion.div
+        initial={{opacity: 0, y: -20}}
+        animate={{opacity: 1, y: 190}}
+        exit={{opacity: 0}}
+        transition={{duration: 0.8}}
+      ><Hero/>
+      </motion.div>
       <About/>
       <Start/>
       <Program/>
@@ -31,7 +46,7 @@
       <Partners/>
       <Footer/>
     </div>
- );
+   );
  }
 
  export default App;

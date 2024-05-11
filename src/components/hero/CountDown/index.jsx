@@ -1,4 +1,20 @@
 import React, {useState, useEffect } from "react";
+
+const items =  {
+  time: {
+    days: 6,
+    hours: 21,
+    minutes: 45,
+    seconds: 30
+  },
+  label: {
+    days: "Дней",
+    hours: "Часов",
+    minutes: "Минут",
+    seconds: "Секунд"
+  }
+};
+
 const CountItem = ({ time, label }) => {
   return (
     <div className="py-5 px-8 bg-[#121212]">
@@ -9,22 +25,6 @@ const CountItem = ({ time, label }) => {
 }
 
 export default function CountTimer() {
-  const items =  {
-    time: {
-      days: 1,
-      hours: 1,
-      minutes: 1,
-      seconds: 1
-    },
-    label: {
-      days: "Дней",
-      hours: "Часов",
-      minutes: "Минут",
-      seconds: "Секунд"
-    }
-  };
-
-
   const [countItem, setCount] = useState(items);
 
   useEffect(() => {
