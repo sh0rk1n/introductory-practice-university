@@ -22,6 +22,7 @@
 
    return (
      <div className="wrapper my-0 mx-auto text-base text-white ">
+
        <motion.div
          initial={{opacity: 0, y: -100}}
          animate={{opacity: 1, y: 0}}

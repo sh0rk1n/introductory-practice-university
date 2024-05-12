@@ -4,10 +4,6 @@ import {Notification} from "../utils/Notification";
 export default function Footer(){
   const [showMessage, setShowMessage] = useState(false);
   const [email, setEmail] = useState('');
-  const handleChange = (e) => {
-    setEmail(e.target.value);
-  };
-
   const handleClick = () => {
     if (email.trim() !== '') {
       setShowMessage(true);
@@ -32,7 +28,7 @@ export default function Footer(){
             type="text"
             placeholder="E-mail"
             value={email}
-            onChange={handleChange}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <button
             className="w-40 py-2.5 px-8 bg-gradient-to-br from-red-500 to-purple-900 rounded-full absolute left-80"
