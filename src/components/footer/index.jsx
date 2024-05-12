@@ -28,7 +28,7 @@ export default function Footer(){
       <div className="flex relative h-11">
         <Reveal>
           <input
-            className="w-96 h-11 pl-4 mr-20  bg-white bg-opacity-25 border-none rounded-l-full outline-none"
+            className="w-96 h-11 pl-4 mr-20  bg-white bg-opacity-25 border-none rounded-l-full outline-none "
             type="text"
             placeholder="E-mail"
             value={email}

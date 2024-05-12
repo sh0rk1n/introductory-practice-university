@@ -3,7 +3,7 @@ import Reveal from "../utils/Reveal";
 
 export default function About(){
   return (
-    <section id='about' className="about flex items-center px-20 ml-64 mb-48">
+    <section id='about' className="about flex items-center px-20 ml-64  mb-48">
       <Reveal>
         <img src="/img/pc-block.svg" draggable="false" alt="PC Block"/>
       </Reveal>

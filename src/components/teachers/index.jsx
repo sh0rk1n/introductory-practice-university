@@ -16,11 +16,10 @@ export default function Teachers() {
         {data.teachers.map((item,index) => (
           <Reveal  key ={index} >
           <div className="flex flex-col items-center ml-8">
-            <img className="rounded-[100%] h-48	w-48 mb-8" src={item.imgSrc} draggable="false"
-                 alt="Teacher"/>
+            <img className="rounded-[100%] h-48	w-48 mb-8" src={item.imgSrc} draggable="false" alt="Teacher"/>
             <h4 className="text-2xl font-medium mb-3 ">{item.name}</h4>
             <p className="text-neutral-500 mb-5">{item.descr}</p>
-            <button className="border rounded-full py-2.5 px-7 ">Биография</button>
+            <button className="border rounded-full py-2.5 px-7 transition duration-700 hover:opacity-60">Биография</button>
           </div>
           </Reveal>
         ))}
