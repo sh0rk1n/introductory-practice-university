@@ -1,12 +1,5 @@
- // ToDoo:
- //         1.Сделать плавный скролл
- //         2. Оптимизировать код: удалить лишние стили / подумать
- //         3. Сделать анимацию исчезновения для уведомления
-
-
  import React from "react";
  import {motion} from "framer-motion";
-
  /* components */
  import Header from "./components/header";
  import Hero from "./components/hero";
@@ -17,12 +10,9 @@
  import Teachers from "./components/teachers";
  import Partners from "./components/partners";
  import Footer from "./components/footer";
-
- function App() {
-
+ export default function App() {
    return (
      <div className="wrapper my-0 mx-auto text-base text-white ">
-
        <motion.div
          initial={{opacity: 0, y: -100}}
          animate={{opacity: 1, y: 0}}
@@ -49,6 +39,4 @@
      </div>
    );
  }
-
- export default App;
 

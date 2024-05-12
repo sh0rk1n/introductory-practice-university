@@ -2,7 +2,6 @@ import React from 'react';
 import Item from "./Item";
 import data from "../../data.json"
 import Reveal from "../utils/Reveal";
-
 export default function Advantages(){
   return (
     <section className="advantages flex flex-col items-center px-20 ml-20 mb-48 ">
@@ -17,10 +16,7 @@ export default function Advantages(){
           />
         ))}
       </div>
-
-
     </section>
-
-);
+  );
 };
 

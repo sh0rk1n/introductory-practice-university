@@ -1,6 +1,5 @@
 import React from 'react';
 import Reveal from "../../utils/Reveal";
-
 export default function Item({item}) {
   return (
     <>
@@ -18,6 +17,5 @@ export default function Item({item}) {
       </div>
     </Reveal>
     </>
-
   );
 };

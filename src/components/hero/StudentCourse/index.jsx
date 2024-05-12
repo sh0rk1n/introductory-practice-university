@@ -1,6 +1,5 @@
 import React from 'react';
 import data from "../../../data.json"
-
 export default function StudentCourse(){
   return (
     <div className="text-neutral-500 mr-20 w-64">

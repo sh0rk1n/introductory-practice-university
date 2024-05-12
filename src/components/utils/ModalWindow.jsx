@@ -11,7 +11,7 @@ export const ModalWindow = ({ onClose }) => {
 
   const handleCloseModal = () => {
     onClose()
-    document.body.style.overflowY = 'auto'; // Разрешить прокрутку страницы
+    document.body.style.overflowY = 'auto';
   };
 
   return (
@@ -21,20 +21,15 @@ export const ModalWindow = ({ onClose }) => {
         <div className="absolute inset-[-500rem] bg-black opacity-30"></div>
       </div>
       <span className="hidden sm:inline-block sm:align-middle sm:h-screen"></span>
-      <div
-        className="inline-block align-bottom bg-gradient-to-br from-purple-400 to-indigo-600 rounded-2xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+      <div className="inline-block align-bottom bg-gradient-to-br from-purple-400 to-indigo-600 rounded-2xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
         <div className="bg-gradient-to-br from-purple-400 to-indigo-600 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
           <div className="text-center">
-            <h3 className="text-3xl font-medium">
-              Записаться на курс
-            </h3>
+            <h3 className="text-3xl font-medium">Записаться на курс</h3>
             <div className="mt-2">
-              <p className="text-sm leading-5 text-gray-300 mb-2">Наш специалист свяжется с вами и ответит на любые
-                ваши <br/> вопросы</p>
+              <p className="text-sm leading-5 text-gray-300 mb-2">Наш специалист свяжется с вами и ответит на любые ваши <br/> вопросы</p>
             </div>
           </div>
           <div className="flex flex-col items-center">
-
             <input className="h-11 w-[26rem] pl-4 my-3 text-black rounded-full outline-none shadow-2xl"
                    placeholder="Имя"
                    type="text"
@@ -53,8 +48,7 @@ export const ModalWindow = ({ onClose }) => {
                    value={email}
                    onChange={(e) => setEmail(e.target.value)}
             />
-            <div
-              className="flex justify-center px-4 py-3 ">
+            <div className="flex justify-center px-4 py-3 ">
             <span className="rounded-md shadow-sm ">
               <button
                 onClick={handleCloseModal}
@@ -69,6 +63,5 @@ export const ModalWindow = ({ onClose }) => {
         </div>
       </div>
     </div>
-
   );
 };

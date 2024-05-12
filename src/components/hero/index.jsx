@@ -10,7 +10,6 @@ export default function Hero(){
     document.body.style.overflow = 'hidden';
   };
 
-
   return (
     <section id='/' className="hero mb-96">
       <div className="px-20 ml-64">

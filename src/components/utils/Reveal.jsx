@@ -1,6 +1,5 @@
 import React , {useEffect, useRef } from 'react';
 import {motion, useInView, useAnimation} from "framer-motion";
-
 export default  function  Reveal ({ children })  {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })

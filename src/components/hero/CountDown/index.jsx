@@ -1,4 +1,5 @@
 import React, {useState, useEffect } from "react";
+
 const items =  {
   time: {
     days: 6,
@@ -24,8 +25,6 @@ const CountItem = ({ time, label }) => {
 }
 
 export default function CountTimer() {
-
-
   const [countItem, setCount] = useState(items);
 
   useEffect(() => {

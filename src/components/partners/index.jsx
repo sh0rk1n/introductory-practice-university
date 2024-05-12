@@ -1,7 +1,6 @@
 import React from 'react';
 import LogoItem from "./LogoItem";
 import Reveal from "../utils/Reveal";
-
 export default function Partners(){
   return (
     <section id='partners' className="partners px-20 ml-64 mb-48">
@@ -17,7 +16,6 @@ export default function Partners(){
         <LogoItem/>
       </Reveal>
     </section>
-
   );
 };
 

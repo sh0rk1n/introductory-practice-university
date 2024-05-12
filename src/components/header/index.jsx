@@ -1,16 +1,5 @@
-
 import NavBar from "./NavBar";
-
 export default function Header(){
-  /*
-   const [scrolled, setScrolled] = useState(false);
-
-    useEffect(() => {
-     const handleScroll = () => window.scrollY > 0 ? setScrolled(true) : setScrolled(false)
-     window.addEventListener("scroll", handleScroll)
-     return () => window.removeEventListener("scroll", handleScroll);
-   }, []);
-   */
   return (
     <header
       className="flex items-center justify-between pt-7 px-20">
