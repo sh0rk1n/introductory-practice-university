@@ -40,12 +40,12 @@ export default function Footer(){
       </div>
       <div className="flex mt-10 mb-11">
         <Reveal>
-          <a href="https://github.com/sh0rk1n" target="_blank">
+          <a href="https://github.com/sh0rk1n" target="_blank"  rel="noreferrer">
             <img className="w-12 h-12 bg-gradient-to-br from-purple-300 to-indigo-600 p-3.5 rounded-[100%] cursor-pointer" src="/img/icons/vk.svg" draggable="false" alt="VK Logo"/>
           </a>
         </Reveal>
         <Reveal>
-          <a href="https://github.com/sh0rk1n" target="_blank">
+          <a href="https://github.com/sh0rk1n" target="_blank"  rel="noreferrer">
             <img className="w-12 h-12 ml-8 bg-gradient-to-br from-purple-300 to-indigo-600 p-3.5 rounded-full cursor-pointer" src="/img/icons/youtube.svg" draggable="false" alt="Youtube Logo"/>
           </a>
         </Reveal>
