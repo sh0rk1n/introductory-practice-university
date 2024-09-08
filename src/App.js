@@ -10,6 +10,7 @@
  import Teachers from "./components/teachers";
  import Partners from "./components/partners";
  import Footer from "./components/footer";
+
  export default function App() {
    return (
      <div className="wrapper my-0 mx-auto text-base text-white ">

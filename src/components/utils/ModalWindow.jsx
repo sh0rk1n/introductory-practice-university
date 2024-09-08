@@ -24,9 +24,16 @@ export const ModalWindow = ({ onClose }) => {
       <div className="inline-block align-bottom bg-gradient-to-br from-purple-400 to-indigo-600 rounded-2xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
         <div className="bg-gradient-to-br from-purple-400 to-indigo-600 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
           <div className="text-center">
+            <button
+                onClick={handleCloseModal}
+                className=" mx-80 mb-6 inline-flex justify-center w-32 border border-transparent bg-gradient-to-br from-red-500 to-purple-900 py-2.5 px-8 rounded-full text-base leading-6 font-medium text-white shadow-sm hover:opacity-90 focus:outline-none sm:text-sm sm:leading-5 mr-auto" //  Добавляем mr-auto
+            >
+              Закрыть
+            </button>
             <h3 className="text-3xl font-medium">Записаться на курс</h3>
             <div className="mt-2">
-              <p className="text-sm leading-5 text-gray-300 mb-2">Наш специалист свяжется с вами и ответит на любые ваши <br/> вопросы</p>
+              <p className="text-sm leading-5 text-gray-300 mb-2">Наш специалист свяжется с вами и ответит на любые
+                ваши <br/> вопросы</p>
             </div>
           </div>
           <div className="flex flex-col items-center">
@@ -53,6 +60,7 @@ export const ModalWindow = ({ onClose }) => {
               <button
                 onClick={handleCloseModal}
                 disabled={!isFormValid()}
+                // Афигеть сколько стилей, через пару месяцев ахренеешь если захочешь что-нибудь отрефакторить. SCSS Modules - the best practice :)
                 className={isFormValid() ? "inline-flex justify-center w-full border border-transparent bg-gradient-to-br from-red-500 to-purple-900 py-2.5 px-8 rounded-full text-base leading-6 font-medium text-white shadow-sm hover:opacity-90 focus:outline-none sm:text-sm sm:leading-5" : "inline-flex justify-center w-full border border-transparent bg-gray-400 py-2.5 px-8 rounded-full text-base leading-6 font-medium text-white shadow-sm cursor-not-allowed opacity-50 sm:text-sm sm:leading-5"}
               >
                 Отправить
