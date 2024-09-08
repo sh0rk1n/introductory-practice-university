@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/introductory-practice-university/static/css/main.4ee5beca.css",
-    "main.js": "/introductory-practice-university/static/js/main.eca1173a.js",
+    "main.css": "/introductory-practice-university/static/css/main.a2a460a8.css",
+    "main.js": "/introductory-practice-university/static/js/main.1e71542f.js",
     "static/media/hero-bgc.svg": "/introductory-practice-university/static/media/hero-bgc.80bddb67bebf8f2fe0bc.svg",
     "static/media/bgc.svg": "/introductory-practice-university/static/media/bgc.97c962f27d51f721ad19.svg",
     "index.html": "/introductory-practice-university/index.html",
-    "main.4ee5beca.css.map": "/introductory-practice-university/static/css/main.4ee5beca.css.map",
-    "main.eca1173a.js.map": "/introductory-practice-university/static/js/main.eca1173a.js.map"
+    "main.a2a460a8.css.map": "/introductory-practice-university/static/css/main.a2a460a8.css.map",
+    "main.1e71542f.js.map": "/introductory-practice-university/static/js/main.1e71542f.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ee5beca.css",
-    "static/js/main.eca1173a.js"
+    "static/css/main.a2a460a8.css",
+    "static/js/main.1e71542f.js"
   ]
 }
